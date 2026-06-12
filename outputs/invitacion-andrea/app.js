@@ -130,7 +130,7 @@ function renderForm() {
 
   invitationMessage.textContent = inviteType === "Amigos"
     ? "Tu presencia hará aún más especial este día. Espero contar contigo para celebrar juntos mis XV años."
-    : "Con gran alegría compartimos este momento tan especial con nuestra familia. Será un honor contar con su presencia.";
+    : "Con gran alegría compartimos este momento tan especial con nuestra familia y amigos. Será un honor contar con su presencia.";
 
   if (isClosed) {
     host.innerHTML = '<div class="closed-message">El periodo de confirmación ha concluido. Si requiere realizar algún cambio, favor de comunicarse directamente con la familia.</div>';
