@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8d7da">
+  <meta name="description" content="Invitación a los XV años de Andrea Jazmín, 31 de julio de 2026 en Ixtapa-Zihuatanejo.">
+  <title>Mis XV años · Andrea Jazmín</title>
+  <link rel="preload" as="image" href="assets/images/final-atardecer.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" async></script>
+</head>
+<body data-invite="amigos">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="hero">
+    <div class="hero-content reveal">
+      <p class="eyebrow">Mis XV años</p>
+      <h1 aria-label="Andrea Jazmín"><span class="name-first">Andrea</span><span class="name-second">Jazmín</span></h1>
+      <p class="hero-subtitle">Una celebración inolvidable</p>
+      <p class="hero-date">31 · Julio · 2026</p>
+      <p class="hero-copy">Hoy celebro una etapa inolvidable de mi vida y deseo compartirla con las personas que más quiero.<small>Entre el mar que me vio crecer y las personas que más amo, celebraré este día tan especial.</small></p>
+      <div class="countdown" aria-label="Cuenta regresiva para el evento">
+        <div><strong data-days>00</strong><span>Días</span></div>
+        <div><strong data-hours>00</strong><span>Horas</span></div>
+        <div><strong data-minutes>00</strong><span>Minutos</span></div>
+        <div><strong data-seconds>00</strong><span>Segundos</span></div>
+      </div>
+      <a class="button button-light" href="#confirmar">Confirmar asistencia</a>
+      <p class="deadline">Agradeceremos confirmar su asistencia antes del 17 de julio de 2026 para poder preparar esta celebración tan especial.</p>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="section story">
+      <div class="container story-grid">
+        <div class="story-image reveal"><img src="assets/images/historia-01.jpg" alt="Andrea Jazmín con corona y ramo frente al mar" loading="lazy"></div>
+        <div class="story-copy reveal">
+          <p class="eyebrow">Un sueño que florece</p>
+          <h2>Mi Historia</h2>
+          <span class="ornament" aria-hidden="true">✦</span>
+          <p>Hace quince años comenzó una hermosa aventura llena de sueños, aprendizajes y momentos inolvidables. Hoy deseo compartir esta celebración con quienes han formado parte de mi camino.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" aria-labelledby="galeria-titulo">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Instantes junto al mar</p>
+          <h2 id="galeria-titulo">Andrea</h2>
+          <span class="ornament" aria-hidden="true">✦</span>
+          <p>Un día entre el azul del océano, la luz de la costa y la alegría de un nuevo capítulo.</p>
+        </div>
+        <div class="masonry">
+          <button class="gallery-button reveal" type="button" aria-label="Ampliar fotografía 1"><img src="assets/images/playa-01.jpg" alt="Andrea con ramo de flores frente a la bahía" loading="lazy"></button>
+          <button class="gallery-button reveal" type="button" aria-label="Ampliar fotografía 2"><img src="assets/images/playa-02.jpg" alt="Andrea sentada frente al mar" loading="lazy"></button>
+          <button class="gallery-button reveal" type="button" aria-label="Ampliar fotografía 3"><img src="assets/images/playa-03.jpg" alt="Andrea contemplando la bahía" loading="lazy"></button>
+          <button class="gallery-button reveal" type="button" aria-label="Ampliar fotografía 4"><img src="assets/images/playa-04.jpg" alt="Retrato de Andrea junto al mar" loading="lazy"></button>
+          <button class="gallery-button reveal" type="button" aria-label="Ampliar fotografía 5"><img src="assets/images/playa-05.jpg" alt="Andrea y su ramo frente a la costa" loading="lazy"></button>
+          <button class="gallery-button reveal" type="button" aria-label="Ampliar fotografía 6"><img src="assets/images/playa-06.jpg" alt="Andrea mirando al mar con un ramo de flores" loading="lazy"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section details" aria-labelledby="detalles-titulo">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Dónde y cuándo</p>
+          <h2 id="detalles-titulo">La celebración</h2>
+        </div>
+        <div class="detail-grid">
+          <article class="detail-card reveal">
+            <p class="eyebrow">16:30 horas</p>
+            <h3>Ceremonia Religiosa</h3>
+            <p><strong data-ceremony-name></strong></p>
+            <p data-ceremony-city></p><p>31 de julio de 2026</p><p data-ceremony-time></p>
+            <a class="button button-light" data-ceremony-map target="_blank" rel="noopener noreferrer">Ver ubicación</a>
+          </article>
+          <article class="detail-card reveal">
+            <p class="eyebrow">19:00 horas</p>
+            <h3>Recepción</h3>
+            <p><strong data-reception-name></strong></p>
+            <p data-reception-city></p><p>31 de julio de 2026</p><p data-reception-time></p>
+            <a class="button button-light" data-reception-map target="_blank" rel="noopener noreferrer">Ver ubicación</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section schedule" aria-labelledby="programa-titulo">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow">Una noche para recordar</p><h2 id="programa-titulo">Programa</h2></div>
+        <div class="timeline">
+          <div class="timeline-item reveal"><div class="timeline-dot"></div><strong>19:00</strong><span>Recepción</span></div>
+          <div class="timeline-item reveal"><div class="timeline-dot"></div><strong>20:30</strong><span>Cena</span></div>
+          <div class="timeline-item reveal"><div class="timeline-dot"></div><strong>22:00</strong><span>Vals</span></div>
+          <div class="timeline-item reveal"><div class="timeline-dot"></div><strong>23:00</strong><span>Baile</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section parents">
+      <div class="container">
+        <div class="parents-card reveal">
+          <p class="eyebrow">Con amor, mis padres</p>
+          <blockquote>“Con inmenso amor damos gracias a Dios por permitirnos acompañar a Andrea durante estos quince años llenos de alegría, aprendizaje y bendiciones. Hoy celebramos la maravillosa persona en la que se ha convertido.”</blockquote>
+          <cite>Felipe Reyes Mercado</cite>
+          <cite>Nylha Iraís Nava Hernández</cite>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rsvp" id="confirmar" aria-labelledby="rsvp-titulo">
+      <div class="container rsvp-wrap">
+        <div class="rsvp-copy reveal">
+          <p class="eyebrow">Reserva la fecha</p>
+          <h2 id="rsvp-titulo">Confirma tu asistencia</h2>
+          <p class="invitation-message"></p>
+          <p class="deadline">Agradeceremos confirmar su asistencia antes del 17 de julio de 2026 para poder preparar esta celebración tan especial.</p>
+        </div>
+        <div data-rsvp-form class="reveal"></div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="reveal">
+        <p class="eyebrow">31 · 07 · 2026</p>
+        <h2>Gracias por acompañarme en uno de los días más importantes de mi vida.</h2>
+        <p class="script">Con cariño, <span data-celebrante>Andrea Jazmín</span></p>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Galería ampliada" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Cerrar">×</button>
+    <button class="lightbox-prev" type="button" aria-label="Fotografía anterior">‹</button>
+    <img src="assets/images/playa-01.jpg" alt="">
+    <button class="lightbox-next" type="button" aria-label="Fotografía siguiente">›</button>
+  </div>
+</body>
+</html>
